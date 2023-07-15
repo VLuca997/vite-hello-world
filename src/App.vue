@@ -1,13 +1,13 @@
 <script >
 import AppTitle from './components/AppTitle.vue'   //importato
-
+import AppHero from './components/AppHero.vue'   //importato
 export default {
   data() {
     return { count: 0 }
   },
   // dichiarazione
   components: {
-    AppTitle
+    AppTitle, AppHero
   }
 }
 </script>
@@ -28,7 +28,7 @@ export default {
 <div class="card">
   <button type="button" @click="count++">count is {{ count }}</button>
 </div>
-
+<AppHero />
 </template>
 
 <style scoped>
